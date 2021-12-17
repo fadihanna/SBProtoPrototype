@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 Template Name: Metronic - Bootstrap 4 HTML, React, Angular 10 & VueJS Admin Dashboard Theme
 Author: KeenThemes
@@ -13,15 +13,18 @@ License: You must have a valid license purchased only from themeforest(the above
 -->
 <html lang="en">
 	<!--begin::Head-->
-	<head><base href="../../">
+	<head><base href="../../../">
 		<meta charset="utf-8" />
-		<title>Pulse | Keenthemes</title>
-		<meta name="description" content="Pulse examples" />
+		<title>Add Shop | Keenthemes</title>
+		<meta name="description" content="Add user example" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="canonical" href="https://keenthemes.com/metronic" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
+		<!--begin::Page Custom Styles(used by this page)-->
+		<link href="assets/css/pages/wizard/wizard-4.css" rel="stylesheet" type="text/css" />
+		<!--end::Page Custom Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
@@ -95,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<h4 class="menu-text">Custom</h4>
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 								</li>
-								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -119,7 +122,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													<span class="menu-text">Applications</span>
 												</span>
 											</li>
-											<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+											<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<i class="menu-bullet menu-bullet-line">
 														<span></span>
@@ -165,7 +168,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																<span class="menu-text">List - Columns 2</span>
 															</a>
 														</li>
-														<li class="menu-item" aria-haspopup="true">
+														<li class="menu-item menu-item-active" aria-haspopup="true">
 															<a href="custom/apps/user/add-user.html" class="menu-link">
 																<i class="menu-bullet menu-bullet-dot">
 																	<span></span>
@@ -2357,7 +2360,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Files/Pictures1.svg-->
@@ -2399,7 +2402,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													<span class="menu-text">Labels</span>
 												</a>
 											</li>
-											<li class="menu-item menu-item-active" aria-haspopup="true">
+											<li class="menu-item" aria-haspopup="true">
 												<a href="features/custom/pulse.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -3377,132 +3380,61 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Subheader-->
-						<div class="subheader py-3 py-lg-8 subheader-transparent" id="kt_subheader">
+						<div class="subheader py-2 py-lg-4 subheader-transparent" id="kt_subheader">
 							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
-								<!--begin::Info-->
-								<div class="d-flex align-items-center mr-1">
-									<!--begin::Page Heading-->
-									<div class="d-flex align-items-baseline flex-wrap mr-5">
-										<!--begin::Page Title-->
-										<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">Pulse</h2>
-										<!--end::Page Title-->
-										<!--begin::Breadcrumb-->
-										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold my-2 p-0">
-											<li class="breadcrumb-item">
-												<a href="" class="text-muted">Custom</a>
-											</li>
-											<li class="breadcrumb-item">
-												<a href="" class="text-muted">Pulse</a>
-											</li>
-										</ul>
-										<!--end::Breadcrumb-->
+								<!--begin::Details-->
+								<div class="d-flex align-items-center flex-wrap mr-2">
+									<!--begin::Title-->
+									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">New Shop</h5>
+									<!--end::Title-->
+									<!--begin::Separator-->
+									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-5 bg-gray-200"></div>
+									<!--end::Separator-->
+									<!--begin::Search Form-->
+									<div class="d-flex align-items-center" id="kt_subheader_search">
+										<span class="text-dark-50 font-weight-bold" id="kt_subheader_total">Enter Shop details and submit</span>
 									</div>
-									<!--end::Page Heading-->
+									<!--end::Search Form-->
 								</div>
-								<!--end::Info-->
+								<!--end::Details-->
 								<!--begin::Toolbar-->
-								<div class="d-flex align-items-center flex-wrap">
+								<div class="d-flex align-items-center">
 									<!--begin::Button-->
-									<a href="#" class="btn btn-primary btn-fixed-height font-weight-bold px-2 px-lg-5 mr-2">
-										<span class="svg-icon svg-icon-lg">
-											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Add-user.svg-->
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<polygon points="0 0 24 0 24 24 0 24" />
-													<path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-													<path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero" />
-												</g>
-											</svg>
-											<!--end::Svg Icon-->
-										</span>
-										<span class="d-none d-md-inline">New Member</span>
-									</a>
+									<a href="#" class="btn btn-default font-weight-bold btn-sm px-3 font-size-base prototype">Back</a>
 									<!--end::Button-->
 									<!--begin::Dropdown-->
-									<div class="dropdown dropdown-inline" data-toggle="tooltip" title="Quick actions" data-placement="left">
-										<a href="#" class="btn btn-primary btn-fixed-height font-weight-bold px-2 px-lg-5 mr-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="svg-icon svg-icon-lg">
-												<!--begin::Svg Icon | path:assets/media/svg/icons/Files/File.svg-->
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<polygon points="0 0 24 0 24 24 0 24" />
-														<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-														<rect fill="#000000" x="6" y="11" width="9" height="2" rx="1" />
-														<rect fill="#000000" x="6" y="15" width="5" height="2" rx="1" />
-													</g>
-												</svg>
-												<!--end::Svg Icon-->
-											</span>
-											<span class="d-none d-md-inline">New Report</span>
-										</a>
-										<div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-right">
-											<!--begin::Navigation-->
-											<ul class="navi navi-hover">
-												<li class="navi-header font-weight-bold py-4">
-													<span class="font-size-lg">Choose Label:</span>
-													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-												</li>
-												<li class="navi-separator mb-3 opacity-70"></li>
+									<div class="btn-group ml-2">
+
+										<div class="dropdown-menu dropdown-menu-sm p-0 m-0 dropdown-menu-right">
+											<ul class="navi py-5">
 												<li class="navi-item">
 													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-success">Customer</span>
+														<span class="navi-icon">
+															<i class="flaticon2-writing"></i>
 														</span>
+														<span class="navi-text">Save &amp; continue</span>
 													</a>
 												</li>
 												<li class="navi-item">
 													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-danger">Partner</span>
+														<span class="navi-icon">
+															<i class="flaticon2-medical-records"></i>
 														</span>
+														<span class="navi-text">Save &amp; add new</span>
 													</a>
 												</li>
 												<li class="navi-item">
 													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-warning">Suplier</span>
+														<span class="navi-icon">
+															<i class="flaticon2-hourglass-1"></i>
 														</span>
+														<span class="navi-text">Save &amp; exit</span>
 													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-primary">Member</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-dark">Staff</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-separator mt-3 opacity-70"></li>
-												<li class="navi-footer py-4">
-													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-													<i class="ki ki-plus icon-sm"></i>Add new</a>
 												</li>
 											</ul>
-											<!--end::Navigation-->
 										</div>
 									</div>
 									<!--end::Dropdown-->
-									<!--begin::Button-->
-									<a href="#" class="btn btn-primary btn-icon font-weight-bold" data-toggle="modal" data-target="#kt_chat_modal">
-										<span class="svg-icon svg-icon-lg">
-											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group-chat.svg-->
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<rect x="0" y="0" width="24" height="24" />
-													<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
-													<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
-												</g>
-											</svg>
-											<!--end::Svg Icon-->
-										</span>
-									</a>
-									<!--end::Button-->
 								</div>
 								<!--end::Toolbar-->
 							</div>
@@ -3512,218 +3444,69 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
 							<div class="container">
-								<!--begin::Notice-->
-								<div class="alert alert-custom alert-white alert-shadow fade show gutter-b" role="alert">
-									<div class="alert-icon">
-										<span class="svg-icon svg-icon-xl svg-icon-primary">
-											<!--begin::Svg Icon | path:assets/media/svg/icons/Tools/Compass.svg-->
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<rect x="0" y="0" width="24" height="24" />
-													<path d="M7.07744993,12.3040451 C7.72444571,13.0716094 8.54044565,13.6920474 9.46808594,14.1079953 L5,23 L4.5,18 L7.07744993,12.3040451 Z M14.5865511,14.2597864 C15.5319561,13.9019016 16.375416,13.3366121 17.0614026,12.6194459 L19.5,18 L19,23 L14.5865511,14.2597864 Z M12,3.55271368e-14 C12.8284271,3.53749572e-14 13.5,0.671572875 13.5,1.5 L13.5,4 L10.5,4 L10.5,1.5 C10.5,0.671572875 11.1715729,3.56793164e-14 12,3.55271368e-14 Z" fill="#000000" opacity="0.3" />
-													<path d="M12,10 C13.1045695,10 14,9.1045695 14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 C10,9.1045695 10.8954305,10 12,10 Z M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z" fill="#000000" fill-rule="nonzero" />
-												</g>
-											</svg>
-											<!--end::Svg Icon-->
-										</span>
-									</div>
-									<div class="alert-text">Custom Pulse component for indication purposes.</div>
-								</div>
-								<!--end::Notice-->
-								<!--begin::Row-->
-								<div class="row">
-									<div class="col-xl-6">
-										<!--begin::Card-->
-										<div class="card card-custom gutter-b">
-											<div class="card-header">
-												<div class="card-title">
-													<h3 class="card-label">Base Examples</h3>
-												</div>
-											</div>
-											<div class="card-body">
-												<!--begin::Example-->
-												<div class="example mb-10">
-													<p>Default label examples.</p>
-													<div class="example-preview">
-														<span class="label pulse mr-10">
-															<span class="position-relative">1</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse mr-10">
-															<span class="position-relative">2</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse mr-10">
-															<span class="position-relative">5</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse mr-10">
-															<span class="position-relative">9</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse">
-															<span class="position-relative">10</span>
-															<span class="pulse-ring"></span>
-														</span>
-													</div>
-													<div class="example-code">
-														<span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
-														<div class="example-highlight">
-															<pre style="height:400px">
-<code class="language-html">
-                        &lt;span class="label pulse mr-10"&gt;
-                            &lt;span class="position-relative"&gt;1&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse mr-10"&gt;
-                            &lt;span class="position-relative"&gt;2&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse mr-10"&gt;
-                            &lt;span class="position-relative"&gt;5&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse mr-10"&gt;
-                            &lt;span class="position-relative"&gt;9&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse"&gt;
-                            &lt;span class="position-relative"&gt;10&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        </code>
-</pre>
+								<!--begin::Card-->
+								<div class="card card-custom card-transparent">
+									<div class="card-body p-0">
+										<!--begin::Wizard-->
+										<div class="wizard wizard-4" id="kt_wizard" data-wizard-state="step-first" data-wizard-clickable="true">
+											<!--begin::Wizard Nav-->
+											<!--end::Wizard Nav-->
+											<!--begin::Card-->
+											<div class="card card-custom card-shadowless rounded-top-0">
+												<!--begin::Body-->
+												<div class="card-body p-0">
+													<div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
+														<div class="col-xl-12 col-xxl-10">
+															<!--begin::Wizard Form-->
+															<form class="form" id="kt_form">
+																<div class="row justify-content-center">
+																	<div class="col-xl-9">
+																		<!--begin::Wizard Step 1-->
+																		<div class="my-5 step" data-wizard-type="step-content" data-wizard-state="current">
+																			<h5 class="text-dark font-weight-bold mb-10">Add shop :</h5>
+																			<!--begin::Group-->
+																			<!--end::Group-->
+																			<!--begin::Group-->
+																			<div class="form-group row">
+																				<label class="col-xl-3 col-lg-3 col-form-label">Shop Name</label>
+																				<div class="col-lg-9 col-xl-9">
+																					<input class="form-control form-control-solid form-control-lg" name="firstname" type="text" value="" />
+																				</div>
+																			</div>
+																			<!--end::Group-->
+																			<!--begin::Group-->
+																			<div class="form-group row">
+																				<label class="col-xl-3 col-lg-3 col-form-label">Notes</label>
+																				<div class="col-lg-9 col-xl-9">
+																					<textarea class="form-control form-control-solid form-control-lg" name="lastname"></textarea>
+
+																				</div>
+																			</div>
+																			<div>
+
+																				<a href="custom/apps/shops/List.html" class="btn btn-primary font-weight-bolder px-9 py-4">Save</a>
+																			</div>
+																		</div>
+																		<!--end::Wizard Step 1-->
+																		<!--begin::Wizard Step 2-->
+																		<!--end::Wizard Step 4-->
+																		<!--begin::Wizard Actions-->
+																		<!--end::Wizard Actions-->
+																	</div>
+																</div>
+															</form>
+															<!--end::Wizard Form-->
 														</div>
 													</div>
 												</div>
-												<!--end::Example-->
-												<!--begin::Example-->
-												<div class="example mb-10">
-													<p>Use
-													<code>.pulse-{success|primary|danger|warning|info|dark|white|success}</code>class to have color pulse options.</p>
-													<div class="example-preview">
-														<span class="label pulse pulse-success mr-10">
-															<span class="position-relative">1</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse pulse-danger mr-10">
-															<span class="position-relative">2</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse pulse-warning mr-10">
-															<span class="position-relative">5</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse pulse-primary mr-10">
-															<span class="position-relative">9</span>
-															<span class="pulse-ring"></span>
-														</span>
-														<span class="label pulse pulse-info">
-															<span class="position-relative">10</span>
-															<span class="pulse-ring"></span>
-														</span>
-													</div>
-													<div class="example-code">
-														<span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
-														<div class="example-highlight">
-															<pre style="height:400px">
-<code class="language-html">
-                        &lt;span class="label pulse pulse-success mr-10"&gt;
-                            &lt;span class="position-relative"&gt;1&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse pulse-danger mr-10"&gt;
-                            &lt;span class="position-relative"&gt;2&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse pulse-warning mr-10"&gt;
-                            &lt;span class="position-relative"&gt;5&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse pulse-primary mr-10"&gt;
-                            &lt;span class="position-relative"&gt;9&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span class="label pulse pulse-info"&gt;
-                            &lt;span class="position-relative"&gt;10&lt;/span&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        </code>
-</pre>
-														</div>
-													</div>
-												</div>
-												<!--end::Example-->
+												<!--end::Body-->
 											</div>
+											<!--end::Card-->
 										</div>
-										<!--end::Card-->
-									</div>
-									<div class="col-xl-6">
-										<!--begin::Card-->
-										<div class="card card-custom gutter-b">
-											<div class="card-header">
-												<div class="card-title">
-													<h3 class="card-label">Advance Examples</h3>
-												</div>
-											</div>
-											<div class="card-body">
-												<!--begin::Example-->
-												<div class="example mb-10">
-													<p>Using with buttons and icons:</p>
-													<div class="example-preview">
-														<a href="#" class="btn btn-icon btn-light-primary pulse pulse-primary mr-5">
-															<i class="flaticon2-bell-5"></i>
-															<span class="pulse-ring"></span>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-success pulse pulse-success mr-5">
-															<i class="flaticon2-protected"></i>
-															<span class="pulse-ring"></span>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-danger pulse pulse-danger mr-5">
-															<i class="flaticon2-information"></i>
-															<span class="pulse-ring"></span>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-warning pulse pulse-warning mr-5">
-															<i class="flaticon2-gear"></i>
-															<span class="pulse-ring"></span>
-														</a>
-													</div>
-													<div class="example-code">
-														<span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
-														<div class="example-highlight">
-															<pre>
-<code class="language-html">
-                        &lt;a href="#" class="btn btn-icon btn-light-primary pulse pulse-primary mr-5"&gt;
-                            &lt;i class="flaticon2-bell-5"&gt;&lt;/i&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/a&gt;
-
-                        &lt;a href="#" class="btn btn-icon btn-light-success pulse pulse-success mr-5"&gt;
-                            &lt;i class="flaticon2-protected"&gt;&lt;/i&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/a&gt;
-
-                        &lt;a href="#" class="btn btn-icon btn-light-danger pulse pulse-danger mr-5"&gt;
-                            &lt;i class="flaticon2-information"&gt;&lt;/i&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/a&gt;
-
-                        &lt;a href="#" class="btn btn-icon btn-light-warning pulse pulse-warning mr-5"&gt;
-                            &lt;i class="flaticon2-gear"&gt;&lt;/i&gt;
-                            &lt;span class="pulse-ring"&gt;&lt;/span&gt;
-                        &lt;/a&gt;
-                        </code>
-</pre>
-														</div>
-													</div>
-												</div>
-												<!--end::Example-->
-											</div>
-										</div>
-										<!--end::Card-->
+										<!--end::Wizard-->
 									</div>
 								</div>
-								<!--end::Row-->
+								<!--end::Card-->
 							</div>
 							<!--end::Container-->
 						</div>
@@ -3761,8 +3544,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="kt_quick_notifications" class="offcanvas offcanvas-right p-10">
 			<!--begin::Header-->
 			<div class="offcanvas-header d-flex align-items-center justify-content-between mb-10">
-				<h3 class="font-weight-bold m-0">Notifications
-				<small class="text-muted font-size-sm ml-2">24 New</small></h3>
+				<h3 class="font-weight-bold m-0">
+					Notifications
+					<small class="text-muted font-size-sm ml-2">24 New</small>
+				</h3>
 				<a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_notifications_close">
 					<i class="ki ki-close icon-xs text-muted"></i>
 				</a>
@@ -3977,8 +3762,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="kt_quick_actions" class="offcanvas offcanvas-right p-10">
 			<!--begin::Header-->
 			<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
-				<h3 class="font-weight-bold m-0">Quick Actions
-				<small class="text-muted font-size-sm ml-2">finance &amp; reports</small></h3>
+				<h3 class="font-weight-bold m-0">
+					Quick Actions
+					<small class="text-muted font-size-sm ml-2">finance &amp; reports</small>
+				</h3>
 				<a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_actions_close">
 					<i class="ki ki-close icon-xs text-muted"></i>
 				</a>
@@ -4130,8 +3917,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
 			<!--begin::Header-->
 			<div class="offcanvas-header d-flex align-items-center justify-content-between pb-5">
-				<h3 class="font-weight-bold m-0">User Profile
-				<small class="text-muted font-size-sm ml-2">12 messages</small></h3>
+				<h3 class="font-weight-bold m-0">
+					User Profile
+					<small class="text-muted font-size-sm ml-2">12 messages</small>
+				</h3>
 				<a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_user_close">
 					<i class="ki ki-close icon-xs text-muted"></i>
 				</a>
@@ -4197,8 +3986,10 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 							<div class="navi-text">
 								<div class="font-weight-bold">My Profile</div>
-								<div class="text-muted">Account settings and more
-								<span class="label label-light-danger label-inline font-weight-bold">update</span></div>
+								<div class="text-muted">
+									Account settings and more
+									<span class="label label-light-danger label-inline font-weight-bold">update</span>
+								</div>
 							</div>
 						</div>
 					</a>
@@ -5098,8 +4889,10 @@ License: You must have a valid license purchased only from themeforest(the above
 												<span class="text-muted font-size-sm">40 seconds</span>
 											</div>
 										</div>
-										<div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">You can unwatch this repository immediately by clicking here:
-										<a href="#">https://github.com</a></div>
+										<div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">
+											You can unwatch this repository immediately by clicking here:
+											<a href="#">https://github.com</a>
+										</div>
 									</div>
 									<!--end::Message In-->
 									<!--begin::Message Out-->
@@ -5243,7 +5036,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo1.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo1/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo1/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo1/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5253,7 +5046,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo2.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo2/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo2/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo2/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5263,7 +5056,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo3.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo3/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo3/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo3/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5273,7 +5066,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo4.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo4/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo4/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo4/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5283,7 +5076,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo5.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo5/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo5/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo5/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5293,7 +5086,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo6.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo6/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo6/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo6/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5303,7 +5096,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo7.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo7/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo7/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo7/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5313,7 +5106,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo8.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo8/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo8/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo8/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5323,7 +5116,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo9.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo9/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo9/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo9/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5333,7 +5126,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo10.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo10/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo10/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo10/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5343,7 +5136,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo11.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo11/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo11/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo11/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5353,7 +5146,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo12.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo12/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo12/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo12/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5363,7 +5156,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<img src="assets/media/demos/demo13.png" alt="" class="w-100" />
 						</div>
 						<div class="overlay-layer">
-							<a href="../../../../demo13/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+							<a href="../../../../../demo13/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
 							<a href="https://preview.keenthemes.com/metronic/demo13/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
 						</div>
 					</div>
@@ -5540,6 +5333,14 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Theme Bundle-->
+		<!--begin::Page Scripts(used by this page)-->
+		<script src="assets/js/pages/custom/user/add-user.js"></script>
+		<script>
+			$('a:not(.prototype)').bind("click.myDisable", function () {
+				return false;
+			});
+		</script>
+		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->
 </html>
